@@ -3,5 +3,7 @@ $('document').ready(function(){
 });
 
 function ingestJson(){
-
+    $.getJSON("http://127.0.0.1:5000/", function(json) {
+        console.log(json)
+    })
 }
