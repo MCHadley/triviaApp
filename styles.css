@@ -1,0 +1,13 @@
+#trivia > * {
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0px 5px 5px 0px #666;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
