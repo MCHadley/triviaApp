@@ -10,6 +10,12 @@ with open('Apprentice_TandemFor400_Data.json', "r") as file:
 def index():
     return 'you are connected'
 
-@app.route('/questions')
+@app.route('/questions', methods=['GET'])
 def questionsServer():
     return jsonify(questions)
+
+@app.after_request
+def add_headers(response):
+     response.headers.add('Access-Control-Allow-Origin', '*')
+     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+     return response
