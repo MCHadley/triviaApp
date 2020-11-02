@@ -23,6 +23,7 @@ function questionBuilder(data){
     $('button').on('click', function(){
     })
 
+    $('#score').hide()
     $('#myCarousel').on('click', e => {
         let div = $("#myCarousel");
         let rbs = div.find('input[type="radio"][value="correct"]');
@@ -31,13 +32,23 @@ function questionBuilder(data){
           if (e.checked)
             rbsChecked++;
         });
-        $('#score').hide()
-        $("#score").text(rbsChecked + "/" + rbs.length);
+        $("#score").text('Your Score: ' + rbsChecked + "/" + rbs.length);
       });
+    $('#myCarousel').carousel({
+        wrap: false
+    });
 }
 
 function showScore(){
+    $('button').hide();
+    var clicks = 0;
+    $('a').on('click', function(){
+        clicks+=1
+        if(clicks == 20){
+            $('#score').show()
+        }
+    });
     $('button').on('click', function(){
         $('#score').show()
-    })
+    });
 }
