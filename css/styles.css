@@ -1,0 +1,40 @@
+#myCarousel {
+    max-width: 300px;
+    left: 700;
+}
+
+#score {
+    max-width: 20px;
+}
+
+#myCarousel > div {
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0px 5px 5px 0px #666;
+    margin-bottom: 20px;
+}
+
+#showScore {
+    all: unset;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    left: 790;
+    top: 200;
+    position: relative;
+    max-height: 20px;
+}
+
+#score {
+    position: relative;
+    left: 865;
+    top: 275;
+}
+
+.carousel-control-next {
+    background-color: navy;
+    top: 500;
+    left: 1000;
+    max-height: 200px;
+}
