@@ -2,7 +2,7 @@
 
 triviaApp
 
-Thank you for taking the time to look at my submission! I really enjoyed working on this, and it definitely stretched me at times!
+Tutorial Project for a job interview
 
 To install the dependencies, open a terminal window and navigate to the folder. Then run the following commands.
 
